@@ -1903,3 +1903,504 @@ Jicofo 2024-06-18 13:55:25.779 INFO: [1] org.eclipse.jetty.server.handler.Contex
 Jicofo 2024-06-18 13:55:25.786 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@26f7cdf8{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
 Jicofo 2024-06-18 13:55:25.796 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@1a480135{STARTING}[11.0.20,sto=0] @1716ms
 Jicofo 2024-06-18 13:55:25.796 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-19 10:18:20.766 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-19 10:18:20.900 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-19 10:18:20.901 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-19 10:18:20.903 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-19 10:18:20.907 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-19 10:18:21.169 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-19 10:18:21.174 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-19 10:18:21.328 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-19 10:18:21.343 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-19 10:18:21.396 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-19 10:18:21.473 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-19 10:18:21.483 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-19 10:18:21.484 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-19 10:18:21.486 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-19 10:18:21.487 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 10:18:21.488 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-19 10:18:21.497 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-19 10:18:21.507 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-19 10:18:21.508 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-19 10:18:21.508 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-19 10:18:21.516 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-19 10:18:21.720 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-19 10:18:21.785 INFO: [15] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-19 10:18:21.942 INFO: [15] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-19 10:18:21.942 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-19 10:18:21.942 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-19 10:18:21.959 WARNING: [33] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=end_conference, address=endconference.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-19 10:18:21.959 INFO: [34] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-19 10:18:21.968 INFO: [34] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 10:18:21.969 INFO: [38] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-19 10:18:21.970 INFO: [39] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-19 10:18:22.005 INFO: [32] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
+Jicofo 2024-06-19 10:18:22.179 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-19 10:18:22.302 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-19 10:18:22.303 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-19 10:18:22.303 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-19 10:18:22.439 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@1775c4e7{/,null,AVAILABLE}
+Jicofo 2024-06-19 10:18:22.442 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@35dd9ed3{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-19 10:18:22.447 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@33db72bd{STARTING}[11.0.20,sto=0] @1821ms
+Jicofo 2024-06-19 10:18:22.447 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+Jicofo 2024-06-19 10:18:22.518 INFO: [35] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-19 10:18:22.520 INFO: [35] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 10:18:22.522 INFO: [40] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 12:32:45.767 INFO: [1] Main.main#93: Stopping services.
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-19 12:32:54.713 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-19 12:32:54.809 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-19 12:32:54.810 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-19 12:32:54.810 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-19 12:32:54.812 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-19 12:32:54.989 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-19 12:32:54.997 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-19 12:32:55.134 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-19 12:32:55.151 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-19 12:32:55.188 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-19 12:32:55.263 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-19 12:32:55.269 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-19 12:32:55.270 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-19 12:32:55.271 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-19 12:32:55.273 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 12:32:55.275 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-19 12:32:55.282 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-19 12:32:55.286 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-19 12:32:55.287 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-19 12:32:55.287 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-19 12:32:55.295 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-19 12:32:55.385 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-19 12:32:55.414 INFO: [15] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-19 12:32:55.537 INFO: [15] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-19 12:32:55.537 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-19 12:32:55.538 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-19 12:32:55.550 WARNING: [32] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=end_conference, address=endconference.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-19 12:32:55.550 INFO: [35] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-19 12:32:55.551 INFO: [36] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-19 12:32:55.556 INFO: [36] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-19 12:32:55.560 INFO: [39] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 12:32:55.568 INFO: [37] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
+Jicofo 2024-06-19 12:32:55.640 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-19 12:32:55.707 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-19 12:32:55.708 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-19 12:32:55.708 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-19 12:32:55.857 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@3d8d17a3{/,null,AVAILABLE}
+Jicofo 2024-06-19 12:32:55.864 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@23202c31{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-19 12:32:55.869 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@681e144{STARTING}[11.0.20,sto=0] @1253ms
+Jicofo 2024-06-19 12:32:55.869 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+Jicofo 2024-06-19 12:32:56.108 INFO: [33] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-19 12:32:56.111 INFO: [33] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 12:32:56.115 INFO: [41] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 12:42:22.122 INFO: [1] Main.main#93: Stopping services.
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-19 12:42:37.555 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-19 12:42:37.709 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-19 12:42:37.711 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-19 12:42:37.712 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-19 12:42:37.715 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-19 12:42:37.988 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-19 12:42:37.993 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-19 12:42:38.126 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-19 12:42:38.138 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-19 12:42:38.177 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-19 12:42:38.240 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-19 12:42:38.247 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-19 12:42:38.248 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-19 12:42:38.250 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-19 12:42:38.251 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 12:42:38.253 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-19 12:42:38.260 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-19 12:42:38.264 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-19 12:42:38.265 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-19 12:42:38.265 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-19 12:42:38.274 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-19 12:42:38.402 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-19 12:42:38.430 INFO: [15] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-19 12:42:38.615 INFO: [15] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-19 12:42:38.616 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-19 12:42:38.616 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-19 12:42:38.624 WARNING: [32] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=end_conference, address=endconference.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-19 12:42:38.627 INFO: [37] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-19 12:42:38.627 INFO: [38] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-19 12:42:38.629 INFO: [37] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-19 12:42:38.629 INFO: [39] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 12:42:38.634 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-19 12:42:38.642 INFO: [20] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-19 12:42:38.644 INFO: [20] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 12:42:38.647 INFO: [41] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 12:42:38.671 INFO: [33] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
+Jicofo 2024-06-19 12:42:38.716 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-19 12:42:38.716 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-19 12:42:38.720 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-19 12:42:38.867 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@3d8d17a3{/,null,AVAILABLE}
+Jicofo 2024-06-19 12:42:38.870 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@23202c31{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-19 12:42:38.874 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@681e144{STARTING}[11.0.20,sto=0] @1469ms
+Jicofo 2024-06-19 12:42:38.874 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+Jicofo 2024-06-19 12:50:11.318 INFO: [1] Main.main#93: Stopping services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-19 12:51:38.481 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-19 12:51:38.588 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-19 12:51:38.589 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-19 12:51:38.590 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-19 12:51:38.592 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-19 12:51:38.769 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-19 12:51:38.774 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-19 12:51:38.908 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-19 12:51:38.919 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-19 12:51:38.952 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-19 12:51:39.022 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-19 12:51:39.028 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-19 12:51:39.029 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-19 12:51:39.033 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-19 12:51:39.038 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 12:51:39.040 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-19 12:51:39.049 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-19 12:51:39.054 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-19 12:51:39.056 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-19 12:51:39.056 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-19 12:51:39.084 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-19 12:51:39.203 INFO: [15] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-19 12:51:39.208 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-19 12:51:39.314 INFO: [15] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-19 12:51:39.314 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-19 12:51:39.315 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-19 12:51:39.324 WARNING: [34] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=end_conference, address=endconference.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-19 12:51:39.325 INFO: [32] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-19 12:51:39.325 INFO: [33] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-19 12:51:39.339 INFO: [33] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-19 12:51:39.341 INFO: [39] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 12:51:39.346 INFO: [35] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
+Jicofo 2024-06-19 12:51:39.496 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-19 12:51:39.569 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-19 12:51:39.569 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-19 12:51:39.570 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-19 12:51:39.732 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@3d8d17a3{/,null,AVAILABLE}
+Jicofo 2024-06-19 12:51:39.745 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@23202c31{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-19 12:51:39.749 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@681e144{STARTING}[11.0.20,sto=0] @1398ms
+Jicofo 2024-06-19 12:51:39.750 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+Jicofo 2024-06-19 12:51:40.011 INFO: [20] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-19 12:51:40.013 INFO: [20] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 12:51:40.016 INFO: [40] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 13:05:10.617 INFO: [1] Main.main#93: Stopping services.
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-19 13:05:33.103 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-19 13:05:33.216 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-19 13:05:33.217 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-19 13:05:33.218 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-19 13:05:33.220 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-19 13:05:33.395 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-19 13:05:33.399 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-19 13:05:33.513 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-19 13:05:33.528 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-19 13:05:33.568 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-19 13:05:33.658 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-19 13:05:33.664 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-19 13:05:33.665 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-19 13:05:33.668 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-19 13:05:33.671 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 13:05:33.674 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-19 13:05:33.682 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-19 13:05:33.687 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-19 13:05:33.688 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-19 13:05:33.689 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-19 13:05:33.706 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-19 13:05:33.819 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-19 13:05:33.830 INFO: [15] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-19 13:05:33.927 INFO: [15] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-19 13:05:33.927 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-19 13:05:33.928 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-19 13:05:33.952 WARNING: [32] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=end_conference, address=endconference.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-19 13:05:33.952 INFO: [34] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-19 13:05:33.955 INFO: [34] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-19 13:05:33.957 INFO: [33] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-19 13:05:33.966 INFO: [39] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 13:05:33.968 INFO: [37] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
+Jicofo 2024-06-19 13:05:34.020 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-19 13:05:34.106 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-19 13:05:34.107 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-19 13:05:34.107 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-19 13:05:34.234 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@1775c4e7{/,null,AVAILABLE}
+Jicofo 2024-06-19 13:05:34.239 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@35dd9ed3{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-19 13:05:34.244 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@33db72bd{STARTING}[11.0.20,sto=0] @1233ms
+Jicofo 2024-06-19 13:05:34.244 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+Jicofo 2024-06-19 13:05:34.556 INFO: [36] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-19 13:05:34.559 INFO: [36] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 13:05:34.563 INFO: [41] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-19 13:10:49.356 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-19 13:10:49.458 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-19 13:10:49.459 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-19 13:10:49.459 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-19 13:10:49.462 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-19 13:10:49.631 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-19 13:10:49.637 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-19 13:10:49.746 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-19 13:10:49.755 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-19 13:10:49.785 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-19 13:10:49.866 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-19 13:10:49.872 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-19 13:10:49.873 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-19 13:10:49.875 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-19 13:10:49.877 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 13:10:49.878 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-19 13:10:49.884 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-19 13:10:49.888 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-19 13:10:49.890 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-19 13:10:49.896 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-19 13:10:49.905 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-19 13:10:49.981 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-19 13:10:49.992 INFO: [15] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-19 13:10:50.076 INFO: [15] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-19 13:10:50.076 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-19 13:10:50.076 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-19 13:10:50.093 WARNING: [36] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=end_conference, address=endconference.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-19 13:10:50.094 INFO: [32] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-19 13:10:50.094 INFO: [32] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-19 13:10:50.095 INFO: [33] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-19 13:10:50.096 INFO: [38] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-19 13:10:50.122 INFO: [37] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
+Jicofo 2024-06-19 13:10:50.244 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-19 13:10:50.302 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-19 13:10:50.302 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-19 13:10:50.303 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-19 13:10:50.437 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@3d8d17a3{/,null,AVAILABLE}
+Jicofo 2024-06-19 13:10:50.440 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@23202c31{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-19 13:10:50.449 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@681e144{STARTING}[11.0.20,sto=0] @1183ms
+Jicofo 2024-06-19 13:10:50.449 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+Jicofo 2024-06-19 13:10:50.761 INFO: [35] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-19 13:10:50.765 INFO: [35] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-19 13:10:50.767 INFO: [39] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+[cont-finish.d] executing container finish scripts...
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+Jicofo 2024-06-22 11:15:56.961 INFO: [1] Main.main#93: Stopping services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-22 11:16:18.412 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-22 11:16:18.512 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-22 11:16:18.513 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-22 11:16:18.514 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-22 11:16:18.516 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-22 11:16:18.723 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-22 11:16:18.728 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-22 11:16:18.874 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-22 11:16:18.886 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-22 11:16:18.910 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-22 11:16:18.981 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-22 11:16:18.986 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-22 11:16:18.987 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-22 11:16:18.989 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-22 11:16:18.990 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-22 11:16:18.994 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-22 11:16:19.001 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-22 11:16:19.005 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-22 11:16:19.006 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-22 11:16:19.006 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-22 11:16:19.021 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-22 11:16:19.134 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-22 11:16:19.144 INFO: [15] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-22 11:16:19.259 INFO: [15] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-22 11:16:19.259 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-22 11:16:19.259 INFO: [15] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-22 11:16:19.271 WARNING: [36] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=end_conference, address=endconference.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-22 11:16:19.271 INFO: [35] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-22 11:16:19.278 INFO: [35] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-22 11:16:19.282 INFO: [38] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-22 11:16:19.284 INFO: [37] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-22 11:16:19.292 INFO: [34] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
+Jicofo 2024-06-22 11:16:19.312 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-22 11:16:19.402 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-22 11:16:19.402 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-22 11:16:19.402 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-22 11:16:19.538 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@b5c6a30{/,null,AVAILABLE}
+Jicofo 2024-06-22 11:16:19.542 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@681adc8f{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-22 11:16:19.546 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@64355120{STARTING}[11.0.20,sto=0] @1301ms
+Jicofo 2024-06-22 11:16:19.546 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+Jicofo 2024-06-22 11:16:19.723 INFO: [32] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-22 11:16:19.726 INFO: [32] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-22 11:16:19.732 INFO: [40] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+[cont-finish.d] executing container finish scripts...
+Jicofo 2024-06-25 16:15:00.609 INFO: [1] Main.main#93: Stopping services.
+[cont-finish.d] done.
+[s6-finish] waiting for services.
+[s6-finish] sending all processes the TERM signal.
+[s6-finish] sending all processes the KILL signal and exiting.
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 01-set-timezone: executing... 
+[cont-init.d] 01-set-timezone: exited 0.
+[cont-init.d] 10-config: executing... 
+[cont-init.d] 10-config: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+Jicofo 2024-06-25 16:15:15.742 INFO: [1] Main.main#47: Starting Jicofo.
+Jicofo 2024-06-25 16:15:16.011 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /config/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/lib/jicofo-selector-1.0-1081.jar!/reference.conf: 1
+Jicofo 2024-06-25 16:15:16.013 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#40: net.java.sip.communicator.SC_HOME_DIR_LOCATION not set
+Jicofo 2024-06-25 16:15:16.014 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2024-06-25 16:15:16.025 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2024-06-25 16:15:16.290 INFO: [1] Smack.initialize#30: Setting XML parsing limits.
+Jicofo 2024-06-25 16:15:16.296 INFO: [1] Smack.initialize#42: Using JitsiXmppStringprep.
+Jicofo 2024-06-25 16:15:16.506 INFO: [1] MetricsUpdater.addUpdateTask#45: Scheduling metrics update task with interval PT30S.
+Jicofo 2024-06-25 16:15:16.524 INFO: [1] JicofoServices.createAuthenticationAuthority#209: Authentication service disabled.
+Jicofo 2024-06-25 16:15:16.572 WARNING: [1] [xmpp_connection=client] XmppProviderKt.createXmppConnection#317: Disabling TLS certificate verification!
+Jicofo 2024-06-25 16:15:16.689 INFO: [1] XmppServices.<init>#45: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2024-06-25 16:15:16.702 INFO: [1] XmppServices.<init>#75: No Jigasi detector configured.
+Jicofo 2024-06-25 16:15:16.704 INFO: [1] AvModerationHandler.componentsChanged#112: No av_moderation component discovered.
+Jicofo 2024-06-25 16:15:16.704 SEVERE: [15] [xmpp_connection=client] XmppProvider.doConnect#181: Failed to connect/login: The following addresses failed: 'RFC 6120 A/AAAA Endpoint + [xmpp.meet.jitsi:5222] (xmpp.meet.jitsi/172.19.0.5:5222)' failed because: java.net.ConnectException: Connection refused
+org.jivesoftware.smack.SmackException$EndpointConnectionException: The following addresses failed: 'RFC 6120 A/AAAA Endpoint + [xmpp.meet.jitsi:5222] (xmpp.meet.jitsi/172.19.0.5:5222)' failed because: java.net.ConnectException: Connection refused
+	at org.jivesoftware.smack.SmackException$EndpointConnectionException.from(SmackException.java:334)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection.connectUsingConfiguration(XMPPTCPConnection.java:664)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection.connectInternal(XMPPTCPConnection.java:849)
+	at org.jivesoftware.smack.AbstractXMPPConnection.connect(AbstractXMPPConnection.java:525)
+	at org.jitsi.jicofo.xmpp.XmppProvider.doConnect(XmppProvider.kt:167)
+	at org.jitsi.jicofo.xmpp.XmppProvider.start$lambda$1(XmppProvider.kt:126)
+	at org.jitsi.retry.RetryStrategy$TaskRunner.run(RetryStrategy.java:167)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Jicofo 2024-06-25 16:15:16.706 INFO: [1] RoomMetadataHandler.componentsChanged#96: No room_metadata component discovered.
+Jicofo 2024-06-25 16:15:16.707 INFO: [1] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-25 16:15:16.709 INFO: [1] ConferenceIqHandler.componentsChanged#208: No breakout room component discovered.
+Jicofo 2024-06-25 16:15:16.727 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2024-06-25 16:15:16.734 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#101: Initialized with JID=jvbbrewery@internal-muc.meet.jitsi
+Jicofo 2024-06-25 16:15:16.737 INFO: [1] JicofoServices.<init>#111: No Jibri detector configured.
+Jicofo 2024-06-25 16:15:16.737 INFO: [1] JicofoServices.<init>#117: No SIP Jibri detector configured.
+Jicofo 2024-06-25 16:15:16.764 INFO: [1] JicofoServices.<init>#146: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=false, [TLSv1.2, TLSv1.3]=[TLSv1.2, TLSv1.3], tlsCipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256].
+Jicofo 2024-06-25 16:15:16.958 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-11.0.20; built: 2024-01-29T21:04:22.394Z; git: 922f8dc188f7011e60d0361de585fd4ac4d63064; jvm 17.0.11+9-Debian-1deb12u1
+Jicofo 2024-06-25 16:15:17.355 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2024-06-25 16:15:17.461 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2024-06-25 16:15:17.462 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.prometheus.Prometheus registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.prometheus.Prometheus will be ignored. 
+Jicofo 2024-06-25 16:15:17.462 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.jicofo.rest.ConferenceRequest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.jicofo.rest.ConferenceRequest will be ignored. 
+Jicofo 2024-06-25 16:15:17.647 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@64b70f41{/,null,AVAILABLE}
+Jicofo 2024-06-25 16:15:17.656 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@23202c31{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2024-06-25 16:15:17.663 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started Server@681e144{STARTING}[11.0.20,sto=0] @2111ms
+Jicofo 2024-06-25 16:15:17.663 INFO: [1] JicofoServices.<init>#169: Registering GlobalMetrics periodic updates.
+Jicofo 2024-06-25 16:15:21.863 INFO: [16] [xmpp_connection=client] XmppProvider.doConnect#168: Connected, JID=null
+Jicofo 2024-06-25 16:15:21.922 INFO: [16] [xmpp_connection=client] XmppProvider.fireRegistrationStateChanged#218: Set replyTimeout=PT15S
+Jicofo 2024-06-25 16:15:21.922 INFO: [16] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#98: Registered.
+Jicofo 2024-06-25 16:15:21.923 INFO: [16] [xmpp_connection=client] XmppProvider$connectionListener$1.authenticated#100: Will discover components for meet.jitsi
+Jicofo 2024-06-25 16:15:21.926 WARNING: [35] [xmpp_connection=client] XmppProvider.setComponents#77: Discovered components: [Component(type=end_conference, address=endconference.meet.jitsi), Component(type=conference_duration, address=conferenceduration.meet.jitsi), Component(type=av_moderation, address=avmoderation.meet.jitsi), Component(type=breakout_rooms, address=breakout.meet.jitsi), Component(type=speakerstats, address=speakerstats.meet.jitsi), Component(type=room_metadata, address=metadata.meet.jitsi), Component(type=lobbyrooms, address=lobby.meet.jitsi)]
+Jicofo 2024-06-25 16:15:21.926 INFO: [33] RoomMetadataHandler.componentsChanged#99: Using room_metadata component at metadata.meet.jitsi.
+Jicofo 2024-06-25 16:15:21.926 INFO: [34] AvModerationHandler.componentsChanged#115: Using av_moderation component at avmoderation.meet.jitsi.
+Jicofo 2024-06-25 16:15:21.927 INFO: [33] ConferenceIqHandler.componentsChanged#211: Using breakout room component at breakout.meet.jitsi.
+Jicofo 2024-06-25 16:15:21.927 INFO: [34] [connection=client] VisitorsManager.updateAddress#57: VisitorsComponentManager is now disabled with address null
+Jicofo 2024-06-25 16:15:21.939 INFO: [36] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#347: Added brewery instance: jvbbrewery@internal-muc.meet.jitsi/7949d9460187
+Jicofo 2024-06-25 16:15:21.942 INFO: [36] BridgeSelector.addJvbAddress#96: Added new videobridge: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-25 16:15:21.944 INFO: [38] JvbDoctor.bridgeAdded#128: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal-muc.meet.jitsi/7949d9460187, version=2.3.109-gacf024b7, relayId=null, region=null, stress=0.00]
+Jicofo 2024-06-25 16:15:21.950 INFO: [32] [type=bridge brewery=jvbbrewery] BaseBrewery.start#177: Joined the room.
